@@ -1,11 +1,11 @@
+import CountdownTimer from "./components/timer";
 
 function App() {
-
   return (
-    <div className="underline">
-     hi
+    <div>
+      <CountdownTimer />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
