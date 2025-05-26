@@ -54,8 +54,7 @@ const CountdownTimer: React.FC = () => {
     <div
       className="relative min-h-screen flex flex-col items-center justify-center bg-cover bg-center"
       style={{
-        backgroundImage:
-          "url('/Free Vector _ Gradient minimalist background.jpg')",
+        backgroundImage: "url('/pexels-eberhardgross-1367192.jpg')",
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
@@ -70,17 +69,17 @@ const CountdownTimer: React.FC = () => {
       <div className="flex space-x-4 mt-4">
         <button
           onClick={handleToggle}
-          className={`text-gray-300 px-8 py-3 mt-3 rounded-md ${
+          className={`text-gray-300 px-8 py-3 mt-3 rounded-md cursor-pointer ${
             isRunning
-              ? "bg-red-600 hover:bg-red-600"
-              : "bg-green-800 hover:bg-green-800"
+              ? "bg-red-600 hover:bg-red-800"
+              : "bg-green-700 hover:bg-green-900"
           }`}
         >
           {isRunning ? "stop" : "start"}
         </button>
         <button
           onClick={resetTimer}
-          className="bg-blue-500 text-white px-8 py-3 mt-3 rounded-md  hover:bg-blue-600"
+          className="bg-blue-600 text-white px-8 py-3 mt-3 rounded-md cursor-pointer hover:bg-blue-800"
         >
           repeat
         </button>
